@@ -1,0 +1,33 @@
+{
+	"folders": [
+		{
+			"name": "io",
+			"path": "packages/io"
+		},
+		{
+			"name": "rx-core",
+			"path": "packages/rx-core"
+		},
+		{
+			"name": "rx-react",
+			"path": "packages/rx-react"
+		},
+		{
+			"name": "deploy",
+			"path": "packages/deploy"
+		},
+		{
+			"name": "cloud",
+			"path": "packages/cloud"
+		},
+		{
+			"name": "cloud-mem",
+			"path": "packages/cloud-mem"
+		},
+		{
+			"name": "stableinf",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
