@@ -1,9 +1,9 @@
-const { Impl, Scene, newTrace } = require('@rotcare/io');
+const { Impl, Scene } = require('@rotcare/io');
+const { renderRootWidget } = require('@rotcare/rx-react');
+const { HomePage } = require('@motherboard/Home/Ui/HomePage');
+
 Scene.currentProject = '@rotcare/demo';
-const scene = new Scene(newTrace('test'), {
+renderRootWidget(HomePage, {
+    serviceProtocol: new Impl.HttpRpcClient(),
     database: new Impl.InMemDatabase(),
-    serviceProtocol: new Impl.HttpRpcClient()
 });
-scene.execute(undefined, async() => {
-    scene.useServices('localhost').getGreetingWords();
-})
