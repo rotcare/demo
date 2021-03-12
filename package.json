@@ -2,13 +2,5 @@
     "private": true,
     "version": "0.1.0",
     "name": "@rotcare/demo",
-    "workspaces": ["packages/*"],
-    "resolutions": {
-        "@rotcare/io": "0.1.0",
-        "@rotcare/rx-core": "0.1.0",
-        "@rotcare/rx-react": "0.1.0",
-        "@rotcare/deploy": "0.1.0",
-        "@rotcare/cloud": "0.1.0",
-        "@rotcare/cloud-mem": "0.1.0"
-    }
+    "workspaces": ["packages/*"]
 }
