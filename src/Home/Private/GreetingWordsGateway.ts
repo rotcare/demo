@@ -1,5 +1,5 @@
-import { Gateway } from "@stableinf/io";
-import { Scene } from "@stableinf/io";
+import { Gateway } from "@rotcare/io";
+import { Scene } from "@rotcare/io";
 
 export class GreetingWordsGateway extends Gateway {
   public static async getGreetingWords(scene: Scene) {

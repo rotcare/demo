@@ -25,7 +25,7 @@
 			"path": "packages/cloud-mem"
 		},
 		{
-			"name": "stableinf",
+			"name": "demo",
 			"path": "."
 		}
 	],
