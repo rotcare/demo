@@ -19,3 +19,6 @@
 [submodule "docs"]
 	path = docs
 	url = https://github.com/rotcare/rotcare.github.io.git
+[submodule "packages/active-record"]
+	path = packages/active-record
+	url = https://github.com/rotcare/active-record.git

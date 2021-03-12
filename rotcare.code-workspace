@@ -5,6 +5,10 @@
 			"path": "packages/io"
 		},
 		{
+			"name": "active-record",
+			"path": "packages/active-record"
+		},
+		{
 			"name": "rx-core",
 			"path": "packages/rx-core"
 		},
