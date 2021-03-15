@@ -25,7 +25,21 @@ class LibraryListView extends Widget {
         return (
             <ul>
                 {this.libraries.map((library) => (
-                    <li key={String(library.id)}>{library.name}</li>
+                    <li key={String(library.id)}>
+                        {library.name}
+                        <ul>
+                            {library.racks.map((rack) => (
+                                <li key={String(rack.id)}>
+                                    {rack.rackIndex}
+                                    <ul>
+                                        {rack.books.map((book) => (
+                                            <li>{book.name} 作者：{book.author}</li>
+                                        ))}
+                                    </ul>
+                                </li>
+                            ))}
+                        </ul>
+                    </li>
                 ))}
             </ul>
         );
