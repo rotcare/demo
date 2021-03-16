@@ -1,7 +1,7 @@
-const { Impl, Scene } = require('@rotcare/io');
-const { renderRootWidget } = require('@rotcare/rx-react');
+import { Impl, Scene } from '@rotcare/io';
+import { renderRootWidget } from '@rotcare/rx-react';
+import { ActiveRecord } from '@rotcare/active-record';
 const { HomePage } = require('@motherboard/Home/Ui/HomePage');
-const { ActiveRecord } = require('@rotcare/active-record');
 
 Scene.currentProject = '@rotcare/demo';
 Scene.serviceDiscover = (options) => {

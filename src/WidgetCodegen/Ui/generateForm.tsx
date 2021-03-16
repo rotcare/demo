@@ -5,7 +5,9 @@ export function generateForm<T>(model: Model<T>, options: {
     [Property in keyof T]?: string 
 }): WidgetClass {
     const lines = [
-        `class extends rx.Widget {
+`const rx = require('@rotcare/rx-core');
+const React = require('react');
+return class extends rx.Widget {
     protected render() {
         return <div>`,
     ];
