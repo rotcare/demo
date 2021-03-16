@@ -33,7 +33,7 @@ class LibraryListView extends Widget {
                                     {rack.rackIndex}
                                     <ul>
                                         {rack.books.map((book) => (
-                                            <li>{book.name} 作者：{book.author}</li>
+                                            <li key={String(book.id)}>{book.name} 作者：{book.author}</li>
                                         ))}
                                     </ul>
                                 </li>
