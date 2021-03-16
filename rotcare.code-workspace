@@ -29,6 +29,10 @@
 			"path": "packages/cloud-mem"
 		},
 		{
+			"name": "codegen",
+			"path": "packages/codegen"
+		},
+		{
 			"name": "demo",
 			"path": "."
 		}

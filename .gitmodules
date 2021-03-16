@@ -22,3 +22,6 @@
 [submodule "packages/active-record"]
 	path = packages/active-record
 	url = https://github.com/rotcare/active-record.git
+[submodule "packages/codegen"]
+	path = packages/codegen
+	url = https://github.com/rotcare/codegen.git

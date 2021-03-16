@@ -5,6 +5,7 @@ import { getLocationHash } from './getLocationHash';
 import { renderWidget } from '@rotcare/rx-react';
 import { LoadObjectGraph } from '../../LoadObjectGraph/Ui/LoadObjectGraph';
 import { RemoteReactive } from '../../RemoteReactive/Ui/RemoteReactive';
+import { EnrollmentForm } from '../../WidgetCodegen/Ui/EnrollmentForm';
 
 export class HomePage extends Widget {
     public render() {
@@ -15,6 +16,8 @@ export class HomePage extends Widget {
                 return renderWidget(LoadObjectGraph);
             case '#RemoteReactive':
                 return renderWidget(RemoteReactive);
+            case '#WidgetCodegen':
+                return renderWidget(EnrollmentForm);
         }
         return (
             <ul>
@@ -26,6 +29,9 @@ export class HomePage extends Widget {
                 </li>
                 <li>
                     <a href="#RemoteReactive">远程订阅刷新</a>
+                </li>
+                <li>
+                    <a href="#WidgetCodegen">界面生成</a>
                 </li>
             </ul>
         );
