@@ -1,8 +1,9 @@
 import { Model } from "@rotcare/codegen";
+import { WidgetClass } from "@rotcare/rx-core";
 
 export function generateForm<T>(model: Model<T>, options: {
     [Property in keyof T]?: string 
-}) {
+}): WidgetClass {
     const lines = [
         `class extends rx.Widget {
     protected render() {
@@ -13,5 +14,5 @@ export function generateForm<T>(model: Model<T>, options: {
     }
     lines.push(`</div>
 }}`);
-    return lines.join('\n');
+    return lines.join('\n') as any;
 }

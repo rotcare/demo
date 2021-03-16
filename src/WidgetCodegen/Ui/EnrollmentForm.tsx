@@ -1,17 +1,13 @@
-import { codegen, Model } from '@rotcare/codegen';
-import * as rx from '@rotcare/rx-core';
+import { codegen, use, Model } from '@rotcare/codegen';
 import type { Enrollment } from '../Private/Enrollment';
-import * as React from 'react';
 
-export const EnrollmentForm = codegen<rx.WidgetClass>(
+export const EnrollmentForm = codegen(
     (enrollment: Model<Enrollment>) => {
-        const { generateForm } = require('./generateForm');
+        const { generateForm } = use(import('./generateForm'));
         return generateForm(enrollment, {
             studentAge: '学生年龄',
             studentName: '学生姓名',
             course: '课程',
         });
-    },
-    rx,
-    React,
+    }
 );
