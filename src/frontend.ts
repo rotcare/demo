@@ -1,7 +1,7 @@
 import { Impl, Scene } from '@rotcare/io';
 import { renderRootWidget } from '@rotcare/rx-react';
 import { ActiveRecord } from '@rotcare/active-record';
-const { HomePage } = require('@motherboard/Home/Ui/HomePage');
+import { HomePage } from './Home/Ui/HomePage';
 
 Scene.currentProject = '@rotcare/demo';
 Scene.serviceDiscover = (options) => {
