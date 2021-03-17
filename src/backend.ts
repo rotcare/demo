@@ -1,7 +1,7 @@
-import { codegen, Model, use } from "@rotcare/codegen";
+import { codegen, Model } from "@rotcare/codegen";
+import * as path from 'path';
 
 export const services = codegen((...models: Model[]) => {
-    const path = use(import('path'));
     const lines = [
         `
 const { Impl, Scene } = require('@rotcare/io');

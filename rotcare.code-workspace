@@ -33,6 +33,10 @@
 			"path": "packages/codegen"
 		},
 		{
+			"name": "demo-generator",
+			"path": "packages/demo-generator"
+		},
+		{
 			"name": "demo",
 			"path": "."
 		}
