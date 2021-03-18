@@ -5,6 +5,10 @@
 			"path": "packages/io"
 		},
 		{
+			"name": "io-mysql",
+			"path": "packages/io-mysql"
+		},
+		{
 			"name": "active-record",
 			"path": "packages/active-record"
 		},
@@ -43,6 +47,9 @@
 	],
 	"settings": {
 		"mochaExplorer.files": "src/**/*_test.ts",
-		"mochaExplorer.require": "../../node_modules/ts-eager/register"
+		"mochaExplorer.env": {
+			"PATH": "$PATH:../../node_modules/.bin:/usr/local/bin"
+		},
+		"mochaExplorer.require": ["../../node_modules/@rotcare/deploy/register"]
 	}
 }

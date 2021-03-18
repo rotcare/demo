@@ -35,12 +35,12 @@ const bookRecords: Partial<Book>[] = [
 
 export async function migrate(scene: Scene) {
     for (const record of libraryRecords) {
-        await scene.insert(Library, record);
+        await scene.create(Library, record);
     }
     for (const record of rackRecords) {
-        await scene.insert(Rack, record);
+        await scene.create(Rack, record);
     }
     for (const record of bookRecords) {
-        await scene.insert(Book, record);
+        await scene.create(Book, record);
     }
 }

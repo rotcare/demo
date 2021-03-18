@@ -3,7 +3,7 @@ import { registerServerless } from '@rotcare/cloud';
 import { generateServerlessFunctions } from '@rotcare/cloud';
 import { Impl } from '@rotcare/io';
 
-export const functions = codegen((...models: Model[]) => {
+const functions = codegen((...models: Model[]) => {
     return generateServerlessFunctions(models);
 });
 
