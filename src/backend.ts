@@ -1,16 +1,12 @@
 import { codegen, Model } from '@rotcare/codegen';
-import { registerServerless } from '@rotcare/cloud';
-import { generateServerlessFunctions } from '@rotcare/cloud';
+import { generateHttpRpcServers } from '@rotcare/cloud';
 import { Impl } from '@rotcare/io';
 
-const functions = codegen((...models: Model[]) => {
-    return generateServerlessFunctions(models);
+export const httpRpcServers = codegen((...models: Model[]) => {
+    return generateHttpRpcServers(models);
 });
 
-registerServerless({
-    ioConf: {
-        database: new Impl.InMemDatabase(),
-        serviceProtocol: undefined as any,
-    },
-    functions,
-});
+export const ioConf = {
+    database: new Impl.InMemDatabase(),
+    serviceProtocol: undefined as any,
+};
