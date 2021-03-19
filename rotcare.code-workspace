@@ -1,8 +1,20 @@
 {
 	"folders": [
 		{
+			"name": "codegen",
+			"path": "packages/codegen"
+		},
+		{
+			"name": "project",
+			"path": "packages/project"
+		},
+		{
 			"name": "io",
 			"path": "packages/io"
+		},
+		{
+			"name": "io-http-rpc",
+			"path": "packages/io-http-rpc"
 		},
 		{
 			"name": "io-mysql",
@@ -33,12 +45,16 @@
 			"path": "packages/cloud-mem"
 		},
 		{
-			"name": "codegen",
-			"path": "packages/codegen"
-		},
-		{
 			"name": "demo-generator",
 			"path": "packages/demo-generator"
+		},
+		{
+			"name": "demo-mysql",
+			"path": "packages/demo-mysql"
+		},
+		{
+			"name": "demo-codegen",
+			"path": "packages/demo-codegen"
 		},
 		{
 			"name": "demo",
@@ -46,10 +62,7 @@
 		}
 	],
 	"settings": {
-		"mochaExplorer.files": "src/**/*_test.ts",
-		"mochaExplorer.env": {
-			"PATH": "$PATH:../../node_modules/.bin:/usr/local/bin"
-		},
-		"mochaExplorer.require": ["../../node_modules/@rotcare/deploy/register"]
+		"mochaExplorer.files": "**/*_test.ts",
+		"mochaExplorer.require": ["../../node_modules/ts-eager/register"]
 	}
 }

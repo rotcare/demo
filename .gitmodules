@@ -7,9 +7,6 @@
 [submodule "packages/rx-react"]
 	path = packages/rx-react
 	url = https://github.com/rotcare/rx-react.git
-[submodule "packages/deploy"]
-	path = packages/deploy
-	url = https://github.com/rotcare/deploy.git
 [submodule "packages/cloud"]
 	path = packages/cloud
 	url = https://github.com/rotcare/cloud.git
@@ -28,3 +25,12 @@
 [submodule "packages/io-mysql"]
 	path = packages/io-mysql
 	url = https://github.com/rotcare/io-mysql.git
+[submodule "packages/io-http-rpc"]
+	path = packages/io-http-rpc
+	url = https://github.com/rotcare/io-http-rpc.git
+[submodule "packages/project"]
+	path = packages/project
+	url = https://github.com/rotcare/project.git
+[submodule "packages/deploy"]
+	path = packages/deploy
+	url = https://github.com/rotcare/deploy.git
