@@ -1,12 +1,12 @@
 import { codegen, Model } from '@rotcare/codegen';
-import { generateHttpRpcServers } from '@rotcare/cloud';
-import { Impl } from '@rotcare/io';
+import { generateHttpRpcServers } from '@rotcare/io-http-rpc';
+import { InMemDatabase } from '@rotcare/io';
 
 export const httpRpcServers = codegen((...models: Model[]) => {
     return generateHttpRpcServers(models);
 });
 
 export const ioConf = {
-    database: new Impl.InMemDatabase(),
+    database: new InMemDatabase(),
     serviceProtocol: undefined as any,
 };

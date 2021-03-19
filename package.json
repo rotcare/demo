@@ -2,5 +2,5 @@
     "private": true,
     "version": "0.1.0",
     "name": "@rotcare/demo",
-    "workspaces": ["packages/*"]
+    "workspaces": ["packages/*", "demos/*"]
 }

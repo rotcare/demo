@@ -45,18 +45,6 @@
 			"path": "packages/cloud-mem"
 		},
 		{
-			"name": "demo-generator",
-			"path": "packages/demo-generator"
-		},
-		{
-			"name": "demo-mysql",
-			"path": "packages/demo-mysql"
-		},
-		{
-			"name": "demo-codegen",
-			"path": "packages/demo-codegen"
-		},
-		{
 			"name": "demo",
 			"path": "."
 		}
