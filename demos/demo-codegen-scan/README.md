@@ -1,0 +1,1 @@
+使用 node -r @rotcare/project/register 直接调用 .ts 文件

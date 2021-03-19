@@ -1,0 +1,8 @@
+{
+    "version": "0.1.0",
+    "name": "@rotcare/demo-codegen-scan",
+    "scripts": {
+        "show": "rotcare-show someCommand.ts",
+        "demo": "yarn show && node -r @rotcare/project/register someCommand.ts"
+    }
+}

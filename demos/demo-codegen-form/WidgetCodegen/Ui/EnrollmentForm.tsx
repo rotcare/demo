@@ -1,6 +1,6 @@
 import { codegen, Model } from '@rotcare/codegen';
 import type { Enrollment } from '../Private/Enrollment';
-import { generateForm } from '@rotcare/demo-generator';
+import { generateForm } from '@rotcare/demo-codegen-form';
 
 export const EnrollmentForm = codegen(
     (enrollment: Model<Enrollment>) => {

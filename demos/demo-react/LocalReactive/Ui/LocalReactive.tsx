@@ -6,6 +6,7 @@ export class LocalReactive extends Widget {
     protected render() {
         return (
             <div>
+                counter: 
                 <button onClick={this.callback('decrement')}>-</button>
                 {this.count}
                 <button onClick={this.callback('increment')}>+</button>

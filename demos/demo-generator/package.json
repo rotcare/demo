@@ -1,9 +1,0 @@
-{
-    "name": "@rotcare/demo-generator",
-    "version": "0.1.0",
-    "main": "src/index.ts",
-    "peerDependencies": {
-        "@rotcare/io": "*",
-        "@rotcare/rx-core": "*"
-    }
-}

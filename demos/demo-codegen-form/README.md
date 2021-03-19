@@ -1,0 +1,1 @@
+不用 @rotcare/deploy，直接用 @rotcare/project 对接 esbuild 完成 bundle/serve

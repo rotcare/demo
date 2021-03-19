@@ -51,6 +51,6 @@
 	],
 	"settings": {
 		"mochaExplorer.files": "**/*_test.ts",
-		"mochaExplorer.require": ["../../node_modules/ts-eager/register"]
+		"mochaExplorer.require": ["../../node_modules/@rotcare/project/register"]
 	}
 }
