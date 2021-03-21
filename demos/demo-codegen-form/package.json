@@ -2,7 +2,7 @@
     "version": "0.1.0",
     "name": "@rotcare/demo-codegen-form",
     "scripts": {
-        "demo": "exec node bin/start.js"
+        "demo": "exec node -r ts-eager/register bin/start.ts"
     },
     "main": "index.ts"
 }

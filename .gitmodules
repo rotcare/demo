@@ -34,3 +34,9 @@
 [submodule "packages/deploy"]
 	path = packages/deploy
 	url = https://github.com/rotcare/deploy.git
+[submodule "packages/project-esbuild"]
+	path = packages/project-esbuild
+	url = https://github.com/rotcare/project-esbuild.git
+[submodule "packages/register"]
+	path = packages/register
+	url = https://github.com/rotcare/register.git

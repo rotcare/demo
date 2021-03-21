@@ -1,13 +1,11 @@
-const esbuild = require('esbuild');
-const path = require('path');
-const { Project, esbuildPlugin, buildModels } = require('@rotcare/project');
+import * as esbuild from 'esbuild';
+import * as path from 'path';
+import { Project } from '@rotcare/project';
+import { esbuildPlugin } from '@rotcare/project-esbuild';
 
 const project = new Project('.');
 
 async function main() {
-    project.toBuild.add('frontend');
-    // 预先完成所有的构建，结果缓存在 project 对象上
-    await buildModels({ project });
     const result = await esbuild.serve(
         {
             servedir: project.projectDir,
@@ -23,7 +21,7 @@ async function main() {
             outdir: path.join(project.projectDir, 'js'),
             absWorkingDir: project.projectDir,
             define: { 'process.env.NODE_ENV': `"development"` },
-            // 把预构建的 @motherboard/* 名字空间下的文件提供给 esbuild
+            // 把 @motherboard/* 名字空间下的文件提供给 esbuild
             plugins: [esbuildPlugin({ project })],
         },
     );
