@@ -1,4 +1,15 @@
 {
     "version": "0.1.0",
-    "name": "@rotcare/demo-rpc"
+    "name": "@rotcare/demo-rpc",
+    "devDependencies": {
+        "npm-run-all": "^4.1.5",
+        "nodemon": "^2.0.7",
+        "serve": "^11.3.2"
+    },
+    "scripts": {
+        "build": "exec node -r ts-eager/register bin/build.ts",
+        "start:backend": "nodemon backend.js",
+        "start:frontend": "serve -C .",
+        "demo": "npm-run-all -p build start:backend start:frontend"
+    }
 }
