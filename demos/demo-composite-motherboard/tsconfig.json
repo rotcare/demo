@@ -7,10 +7,7 @@
         "module": "CommonJs",
         "strictPropertyInitialization": false,
         "jsx": "react",
-        "noEmit": true,
-        "paths": {
-            "@motherboard/*": ["../demo-composite-motherboard/*"]
-        },
-        "baseUrl": "."
-    }
+        "noEmit": true
+    },
+    "include": ["./**/*.ts"]
 }

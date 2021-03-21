@@ -1,6 +1,4 @@
-import { renderRootWidget } from '@rotcare/rx-react';
 import { HomePage } from '@motherboard/Home/Ui/HomePage';
-import { Scene } from '@rotcare/io';
+import * as ReactDOM from 'react-dom';
 
-Scene.currentProject = '@rotcare/demo';
-renderRootWidget(HomePage, undefined as any);
+ReactDOM.render(new HomePage().render(), document.getElementById('RootWidget'));

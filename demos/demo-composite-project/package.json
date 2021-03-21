@@ -1,6 +1,7 @@
 {
     "name": "@rotcare/demo-composite-project",
     "version": "0.1.0",
+    "license": "MIT",
     "rotcare": {
         "project": "composite"
     },
@@ -17,6 +18,10 @@
         "build": "node -r ts-eager/register bin/build.ts",
         "start:frontend": "serve -C .",
         "start:backend": "node backend.js",
-        "demo": "yarn build && npm-run-all start:frontend start:backend"
+        "start:backend-using-register": "node -r @rotcare/register backend.ts",
+        "demo": "yarn build && npm-run-all -p start:frontend start:backend-using-register",
+        "show-backend": "rotcare-show backend",
+        "show-HomePage": "rotcare-show Home/Ui/HomePage",
+        "show-SomeCommand": "rotcare-show Home/Private/SomeCommand"
     }
 }
