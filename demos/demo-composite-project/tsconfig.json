@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "target": "es2018",
+        "strict": true,
+        "moduleResolution": "node",
+        "experimentalDecorators": true,
+        "module": "CommonJs",
+        "strictPropertyInitialization": false,
+        "jsx": "react",
+        "noEmit": true,
+        "paths": {
+            "@motherboard/*": ["../demo-composite-motherboard/*"]
+        },
+        "baseUrl": "."
+    },
+    "include": ["./**/*.ts"]
+}
