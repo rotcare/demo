@@ -5,6 +5,7 @@ export class SomeCommand extends INF {
      * @override
      */
     protected async step1() {
-        console.log('step1 provided by plugin1');
+        // 演示 error 的 stack trace 能够正确被 source map
+        console.log('step1 provided by plugin1', new Error());
     }
 }

@@ -5,7 +5,7 @@
     "rotcare": {
         "project": "composite"
     },
-    "peerDependencies": {
+    "dependencies": {
         "@rotcare/demo-composite-motherboard": "*",
         "@rotcare/demo-composite-plugin1": "*",
         "@rotcare/demo-composite-plugin2": "*"
@@ -19,9 +19,10 @@
         "start:frontend": "serve -C .",
         "start:backend": "node backend.js",
         "start:backend-using-register": "node -r @rotcare/register backend.ts",
+        "start:demo-source-map": "cp bin/demo-source-map.ts /tmp/demo-source-map.ts && node -r @rotcare/register /tmp/demo-source-map.ts",
         "demo": "yarn build && npm-run-all -p start:frontend start:backend-using-register",
-        "show-backend": "rotcare-show backend",
-        "show-HomePage": "rotcare-show Home/Ui/HomePage",
-        "show-SomeCommand": "rotcare-show Home/Private/SomeCommand"
+        "show:backend": "rotcare-show backend",
+        "show:HomePage": "rotcare-show Home/Ui/HomePage",
+        "show:SomeCommand": "rotcare-show Home/Private/SomeCommand"
     }
 }
