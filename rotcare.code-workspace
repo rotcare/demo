@@ -53,6 +53,10 @@
 			"path": "packages/cloud-mem"
 		},
 		{
+			"name": "docs",
+			"path": "docs"
+		},
+		{
 			"name": "demo",
 			"path": "."
 		}
