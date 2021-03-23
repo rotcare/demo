@@ -79,12 +79,16 @@ function assertGitRepoClean(packagePath: string) {
 }
 
 function exec(cwd: string, command: string) {
-    console.log(command);
-    childProcess.execSync(command, {
-        cwd,
-        stdio: 'inherit',
-        env: { ...process.env, npm_config_registry: '' },
-    });
+    console.log(`${command} @ ${cwd}`);
+    try {
+        childProcess.execSync(command, {
+            cwd,
+            stdio: 'inherit',
+            env: { ...process.env, npm_config_registry: '' },
+        });
+    } catch(e) {
+        throw e;
+    }
 }
 
 function execAndGetStdout(cwd: string, command: string) {

@@ -1,1 +1,2 @@
-export * from './generateForm'
+export * from './generateFormEditor'
+export * from './TextBox'

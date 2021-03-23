@@ -9,5 +9,5 @@
         "jsx": "react",
         "noEmit": true
     },
-    "include": ["./**/*.ts"]
+    "include": ["./**/*.ts", "frontend.tsx", "TextBox.tsx"]
 }

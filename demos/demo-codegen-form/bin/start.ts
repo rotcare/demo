@@ -22,7 +22,7 @@ async function main() {
             absWorkingDir: project.projectDir,
             define: { 'process.env.NODE_ENV': `"development"` },
             // 把 @motherboard/* 名字空间下的文件提供给 esbuild
-            plugins: [esbuildPlugin({ project })],
+            plugins: [esbuildPlugin(project)],
         },
     );
     console.log('serve @8080, this server will not watch for changes, manually restart required')

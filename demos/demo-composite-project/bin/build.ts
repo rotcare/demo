@@ -17,7 +17,7 @@ async function main() {
                 target: 'es2020',
                 absWorkingDir: project.projectDir,
                 define: { 'process.env.NODE_ENV': `"development"` },
-                plugins: [esbuildPlugin({ project })],
+                plugins: [esbuildPlugin(project)],
             })
         ).outputFiles![0].text,
     );
@@ -33,7 +33,7 @@ async function main() {
                 format: 'cjs',
                 write: false,
                 absWorkingDir: project.projectDir,
-                plugins: [esbuildPlugin({ project })],
+                plugins: [esbuildPlugin(project)],
             })
         ).outputFiles![0].text,
     );
