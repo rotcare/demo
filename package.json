@@ -4,6 +4,6 @@
     "name": "@rotcare/demo",
     "workspaces": ["packages/*", "demos/*"],
     "scripts": {
-        "release:codegen": "node -r ts-eager/register bin/release.ts packages/codegen packages/project"
+        "release:codegen": "node -r ts-eager/register bin/release.ts packages/project-esbuild packages/codegen packages/project"
     }
 }
