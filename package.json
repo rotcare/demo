@@ -2,5 +2,8 @@
     "private": true,
     "version": "0.1.0",
     "name": "@rotcare/demo",
-    "workspaces": ["packages/*", "demos/*"]
+    "workspaces": ["packages/*", "demos/*"],
+    "scripts": {
+        "release:codegen": "node -r ts-eager/register bin/release.ts packages/codegen packages/project"
+    }
 }
