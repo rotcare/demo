@@ -16,13 +16,13 @@
     },
     "scripts": {
         "build": "node -r ts-eager/register bin/build.ts",
-        "start:frontend": "serve -C .",
-        "start:backend": "node backend.js",
-        "start:backend-using-register": "node -r @rotcare/register backend.ts",
+        "start:frontend": "serve -C Main",
+        "start:backend": "node Main/backend.js",
+        "start:backend-using-register": "node -r @rotcare/register Main/backend.ts",
         "start:demo-source-map": "cp bin/demo-source-map.ts /tmp/demo-source-map.ts && node -r @rotcare/register /tmp/demo-source-map.ts",
         "demo": "yarn build && npm-run-all -p start:frontend start:backend-using-register",
-        "show:backend": "rotcare-show backend",
-        "show:HomePage": "rotcare-show Home/Ui/HomePage",
-        "show:SomeCommand": "rotcare-show Home/Private/SomeCommand"
+        "show:backend": "rotcare-show Main/backend",
+        "show:HomePage": "rotcare-show Main/Ui/HomePage",
+        "show:SomeCommand": "rotcare-show Main/Private/SomeCommand"
     }
 }

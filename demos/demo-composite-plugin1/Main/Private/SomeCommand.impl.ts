@@ -1,4 +1,4 @@
-import { SomeCommand as INF } from '@motherboard/Home/Private/SomeCommand';
+import { SomeCommand as INF } from '@motherboard/Main/Private/SomeCommand';
 
 export class SomeCommand extends INF {
     /**

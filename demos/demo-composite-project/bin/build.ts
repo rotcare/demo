@@ -5,13 +5,13 @@ import * as esbuild from 'esbuild';
 async function main() {
     const project = new Project('.');
     fs.writeFileSync(
-        'frontend.js',
+        'Main/frontend.js',
         (
             await esbuild.build({
                 sourcemap: 'inline',
                 keepNames: true,
                 bundle: true,
-                entryPoints: ['@motherboard/frontend'],
+                entryPoints: ['@motherboard/Main/frontend'],
                 write: false,
                 platform: 'browser',
                 target: 'es2020',
@@ -22,13 +22,13 @@ async function main() {
         ).outputFiles![0].text,
     );
     fs.writeFileSync(
-        'backend.js',
+        'Main/backend.js',
         (
             await esbuild.build({
                 sourcemap: 'inline',
                 keepNames: true,
                 bundle: true,
-                entryPoints: ['@motherboard/backend'],
+                entryPoints: ['@motherboard/Main/backend'],
                 platform: 'node',
                 format: 'cjs',
                 write: false,
