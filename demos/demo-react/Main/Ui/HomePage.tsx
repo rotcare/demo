@@ -1,6 +1,6 @@
 import { Widget } from '@rotcare/rx-core';
 import * as React from 'react';
-import { LocalReactive } from '../../LocalReactive/Ui/LocalReactive';
+import { LocalReactive } from './LocalReactive';
 import { getLocationHash } from './getLocationHash';
 import { renderWidget } from '@rotcare/rx-react';
 

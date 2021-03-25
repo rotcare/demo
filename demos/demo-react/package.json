@@ -2,6 +2,6 @@
     "version": "0.1.0",
     "name": "@rotcare/demo-react",
     "scripts": {
-        "demo": "esbuild frontend.ts --bundle --servedir=. --outdir=./js --define:process.env.NODE_ENV='\"development\"' --serve=0.0.0.0:8080"
+        "demo": "esbuild Main/frontend.ts --bundle --servedir=Main --outdir=Main/js --define:process.env.NODE_ENV='\"development\"' --serve=0.0.0.0:8080"
     }
 }
