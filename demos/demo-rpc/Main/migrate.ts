@@ -1,7 +1,7 @@
 import { Scene } from '@rotcare/io';
-import { Book } from './LoadObjectGraph/Private/Book';
-import { Library } from './LoadObjectGraph/Private/Library';
-import { Rack } from './LoadObjectGraph/Private/Rack';
+import { Book } from './Private/LoadObjectGraph/Book';
+import { Library } from './Private/LoadObjectGraph/Library';
+import { Rack } from './Private/LoadObjectGraph/Rack';
 
 const libraryRecords: Partial<Library>[] = [
     {

@@ -1,7 +1,9 @@
 import { ActiveRecord, toGet, toQuery, toRun } from "@rotcare/active-record";
 import { Scene } from "@rotcare/io";
+import { MAIN_RPOJECT } from "../../MAIN_PROJECT";
 
 export class Counter extends ActiveRecord {
+    public static project = MAIN_RPOJECT;
     public static async insertCounter(scene: Scene) {
         return await scene.io.database.insert(scene, Counter, { count: 0 });
     }

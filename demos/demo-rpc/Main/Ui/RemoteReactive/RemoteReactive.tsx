@@ -1,10 +1,10 @@
 import { Scene } from "@rotcare/io";
 import { Future, Widget } from "@rotcare/rx-core";
 import * as React from 'react';
-import type { Counter } from '../Private/Counter';
+import type { Counter } from '../../Private/RemoteReactive/Counter';
 
 function $(scene: Scene) {
-    return scene.useServices<typeof Counter>();
+    return scene.useServices<typeof Counter>('Main');
 }
 
 // 可以用 Future 来缓存一些跨 widget 的公共数据

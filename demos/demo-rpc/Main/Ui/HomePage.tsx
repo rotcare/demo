@@ -2,8 +2,8 @@ import { Widget } from '@rotcare/rx-core';
 import * as React from 'react';
 import { getLocationHash } from './getLocationHash';
 import { renderWidget } from '@rotcare/rx-react';
-import { LoadObjectGraph } from '../../LoadObjectGraph/Ui/LoadObjectGraph';
-import { RemoteReactive } from '../../RemoteReactive/Ui/RemoteReactive';
+import { LoadObjectGraph } from './LoadObjectGraph/LoadObjectGraph';
+import { RemoteReactive } from './RemoteReactive/RemoteReactive';
 
 export class HomePage extends Widget {
     public render() {

@@ -2,11 +2,11 @@ import * as React from 'react';
 import { Suspense } from 'react';
 import { Scene } from '@rotcare/io';
 import { Widget } from '@rotcare/rx-core';
-import type { Library } from '../Private/Library';
+import type { Library } from '../../Private/LoadObjectGraph/Library';
 import { renderWidget } from '@rotcare/rx-react';
 
 function $(scene: Scene) {
-    return scene.useServices<typeof Library>();
+    return scene.useServices<typeof Library>('Main');
 }
 
 export class LoadObjectGraph extends Widget {

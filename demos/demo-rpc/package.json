@@ -8,8 +8,8 @@
     },
     "scripts": {
         "build": "exec node -r ts-eager/register bin/build.ts",
-        "start:backend": "nodemon backend.js",
-        "start:frontend": "serve -C .",
+        "start:backend": "nodemon Main/backend.js",
+        "start:frontend": "serve -C Main",
         "demo": "npm-run-all -p build start:backend start:frontend"
     }
 }

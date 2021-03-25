@@ -6,17 +6,17 @@ export async function build(projectDir: string) {
     const project = new Project(projectDir);
     watch(project, [
         async (project) => {
-            const result = await buildBackend(project);
+            const result = await buildBackend(project, '@motherboard/Main/backend');
             const bundledCode = result.outputFiles![0].text;
-            if (fs.readFileSync('backend.js').toString() !== bundledCode) {
-                fs.writeFileSync('backend.js', bundledCode);
+            if (!fs.existsSync('Main/backend.js') || fs.readFileSync('Main/backend.js').toString() !== bundledCode) {
+                fs.writeFileSync('Main/backend.js', bundledCode);
             }
         },
         async (project) => {
-            const result = await buildFrontend(project);
+            const result = await buildFrontend(project, '@motherboard/Main/frontend');
             const bundledCode = result.outputFiles![0].text;
-            if (fs.readFileSync('frontend.js').toString() !== bundledCode) {
-                fs.writeFileSync('frontend.js', bundledCode);
+            if (!fs.existsSync('Main/frontend.js') || fs.readFileSync('Main/frontend.js').toString() !== bundledCode) {
+                fs.writeFileSync('Main/frontend.js', bundledCode);
             }
         },
     ]);
