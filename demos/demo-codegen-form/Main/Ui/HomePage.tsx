@@ -1,6 +1,6 @@
-import { EnrollmentFormEditor } from '../../WidgetCodegen/Ui/EnrollmentFormEditor';
+import { EnrollmentFormEditor } from './EnrollmentFormEditor';
 import * as React from 'react';
-import { EnrollmentForm } from '../../WidgetCodegen/Ui/EnrollmentForm';
+import { EnrollmentForm } from './EnrollmentForm';
 
 export function HomePage() {
     const [form, _] = React.useState(() => new EnrollmentForm());

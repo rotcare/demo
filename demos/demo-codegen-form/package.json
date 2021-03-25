@@ -4,5 +4,5 @@
     "scripts": {
         "demo": "exec node -r ts-eager/register bin/start.ts"
     },
-    "main": "index.ts"
+    "main": "src/index.ts"
 }
