@@ -40,3 +40,6 @@
 [submodule "packages/register"]
 	path = packages/register
 	url = https://github.com/rotcare/register.git
+[submodule "packages/model-mysql"]
+	path = packages/model-mysql
+	url = https://github.com/rotcare/model-mysql.git

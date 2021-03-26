@@ -29,6 +29,10 @@
 			"path": "packages/io-mysql"
 		},
 		{
+			"name": "model-mysql",
+			"path": "packages/model-mysql"
+		},
+		{
 			"name": "active-record",
 			"path": "packages/active-record"
 		},
@@ -64,7 +68,7 @@
 	"settings": {
 		"mochaExplorer.files": "**/*_test.ts",
 		"mochaExplorer.require": [
-			"../../node_modules/ts-eager/register"
+			"../../node_modules/@rotcare/register"
 		],
 		"typescript.tsdk": "demo/node_modules/typescript/lib"
 	}
