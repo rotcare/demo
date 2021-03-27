@@ -1,7 +1,10 @@
 {
     "version": "0.1.0",
     "name": "@rotcare/demo-react",
+    "dependencies": {
+        "logrocket":"^1.0.14"
+    },
     "scripts": {
-        "demo": "esbuild Main/frontend.ts --bundle --servedir=Main --outdir=Main/js --define:process.env.NODE_ENV='\"development\"' --serve=0.0.0.0:8080"
+        "demo": "esbuild Main/frontend.ts --bundle --servedir=Main --outdir=Main/js --define:process.env.NODE_ENV='\"development\"' --serve=0.0.0.0:2515"
     }
 }
